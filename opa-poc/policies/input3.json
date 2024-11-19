@@ -1,0 +1,59 @@
+[
+    {
+        "total_count_activity_hour": 0.95,
+        "total_count_activity_day": 0.85,
+        "outlier_max_score_summary_hour": 0.92,
+        "outlier_max_score_summary_day": 0.87,
+        "count_violations_hour": 0.91,
+        "count_violations_day": 0.82,
+        "sensitive_obj_hour": 0.92,
+        "sensitive_obj_day": 0.85,
+        "va_critical_week": 0.80,
+        "login_failed_exceptions_hour": 0.91,
+        "login_failed_exceptions_day": 0.78
+      },
+      {
+        "total_count_activity_hour": 0.85,
+        "total_count_activity_day": 0.7,
+        "outlier_max_score_summary_hour": 0.85,
+        "outlier_max_score_summary_day": 0.75,
+        "count_violations_hour": 0.85,
+        "count_violations_day": 0.7,
+        "sensitive_obj_hour": 0.30,
+        "sensitive_obj_day": 0.35,
+        "va_critical_week": 0.50,
+        "login_failed_exceptions_hour": 0.15,
+        "login_failed_exceptions_day": 0.3
+      },
+      {
+        "total_count_activity_hour": 0.7,  
+        "total_count_activity_day": 0.5,    
+        "outlier_max_score_summary_hour": 0.7,  
+        "outlier_max_score_summary_day": 0.5,    
+        "count_violations_hour": 0.7,         
+        "count_violations_day": 0.5,           
+        "sensitive_obj_hour": 0.2,            
+        "sensitive_obj_day": 0.3,              
+        "va_critical_week": 0.5,                
+        "login_failed_exceptions_hour": 0.1,    
+        "login_failed_exceptions_day": 0.2      
+    },
+    {
+        "total_count_activity_hour": 0.5,
+        "total_count_activity_day": 0.2,
+        "outlier_max_score_summary_hour": 0.4,
+        "outlier_max_score_summary_day": 0.2,
+        "count_violations_hour": 0.4,
+        "count_violations_day": 0.2,
+        "sensitive_obj_hour": 0.1,
+        "sensitive_obj_day": 0.3,
+        "va_critical_week": 0.3,
+        "login_failed_exceptions_hour": 0.1,
+        "login_failed_exceptions_day": 0.3
+    }
+    
+    
+      
+       
+    
+]

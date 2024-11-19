@@ -1,0 +1,174 @@
+{
+  "dbuser_excessive_data_activities_critical": {
+      "AnyOf": {
+        "dbuser_is_high_volume_select_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+        "dbuser_is_high_volume_select_day": {"Min": 1, "Max": 1, "IsBoolean": true},
+        "dbuser_outlier_max_score_summary_hour": {"Min": 0.9, "Max": 1},
+        "dbuser_is_admin_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+        "dbuser_sensitive_obj_hour": {"Min": 0.9, "Max": 1},
+        "dbuser_sensitive_obj_day": {"Min": 0.8, "Max": 1}
+      }
+    },
+"dbuser_excessive_data_activities_high": {
+      "AnyOf": {
+        "dbuser_is_high_volume_select_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+        "dbuser_is_high_volume_select_day": {"Min": 1, "Max": 1, "IsBoolean": true},
+        "dbuser_outlier_max_score_summary_hour": {"Min": 0.8, "Max": 0.9},
+        "dbuser_is_admin_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+        "dbuser_sensitive_obj_hour": {"Min": 0.8, "Max": 0.9},
+        "dbuser_sensitive_obj_day": {"Min": 0.6, "Max": 0.8}
+      }
+    },
+    "dbuser_excessive_data_activities_medium": {
+      "AnyOf": {
+        "dbuser_is_high_volume_select_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+        "dbuser_is_high_volume_select_day": {"Min": 1, "Max": 1, "IsBoolean": true},
+        "dbuser_outlier_max_score_summary_hour": {"Min": 0.6, "Max": 0.8},
+        "dbuser_is_admin_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+        "dbuser_sensitive_obj_hour": {"Min": 0.6, "Max": 0.8},
+        "dbuser_sensitive_obj_day": {"Min": 0.3, "Max": 0.6}
+      }
+    },
+"dbuser_excessive_data_activities_low": {
+      "AnyOf": {
+        "dbuser_is_high_volume_select_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+        "dbuser_is_high_volume_select_day": {"Min": 1, "Max": 1, "IsBoolean": true},
+        "dbuser_outlier_max_score_summary_hour": {"Min": 0.3, "Max": 0.6},
+        "dbuser_is_admin_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+        "dbuser_sensitive_obj_hour": {"Min": 0.3, "Max": 0.6},
+        "dbuser_sensitive_obj_day": {"Min": 0.0, "Max": 0.3}
+      }
+    },
+
+    
+      "dbuser_suspicious_activities_critical": {
+        "AnyOf": {
+          "dbuser_is_new_connection_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+          "dbuser_is_new_source_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+          "dbuser_suc_sql_hour": {"Min": 0.9},
+          "dbuser_outlier_max_score_summary_hour": {"Min": 0.9},
+          "dbuser_is_admin_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+          "dbuser_sensitive_obj_hour": {"Min": 0.9,"Max":1},
+          "dbuser_sensitive_obj_day": {"Min": 0.8,"Max":1}
+        }
+      },
+      "dbuser_suspicious_activities_high": {
+        "AnyOf": {
+          "dbuser_is_new_connection_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+          "dbuser_is_new_source_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+          "dbuser_suc_sql_hour": {"Min": 0.8,"Max":0.9},
+          "dbuser_outlier_max_score_summary_hour": {"Min": 0.8,"Max":0.9},
+          "dbuser_is_admin_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+          "dbuser_sensitive_obj_hour": {"Min": 0.8,"Max":0.9},
+          "dbuser_sensitive_obj_day": {"Min": 0.6,"Max":0.8}
+        }
+      },
+    "dbuser_suspicious_activities_medium": {
+        "AnyOf": {
+          "dbuser_is_new_connection_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+          "dbuser_is_new_source_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+          "dbuser_suc_sql_hour": {"Min": 0.6,"Max":0.8},
+          "dbuser_outlier_max_score_summary_hour": {"Min": 0.6,"Max":0.8},
+          "dbuser_is_admin_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+          "dbuser_sensitive_obj_hour": {"Min": 0.6,"Max":0.8},
+          "dbuser_sensitive_obj_day": {"Min": 0.3,"Max":0.6}
+        }
+      },
+      "dbuser_suspicious_activities_low": {
+        "AnyOf": {
+          "dbuser_is_new_connection_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+          "dbuser_is_new_source_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+          "dbuser_suc_sql_hour": {"Min": 0.3,"Max":0.6},
+          "dbuser_outlier_max_score_summary_hour": {"Min": 0.3,"Max":0.6},
+          "dbuser_is_admin_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+          "dbuser_sensitive_obj_hour": {"Min": 0.3,"Max":0.6},
+          "dbuser_sensitive_obj_day": {"Min":0.0, "Max":0.3}
+        }
+      },
+    
+
+      
+        "dbuser_high_outlier_large_activities_critical": {
+          "AnyOf": {
+            "dbuser_total_count_activity_hour": {"Min": 0.9, "Max": 1.0},
+            "dbuser_total_count_activity_day": {"Min": 0.8, "Max": 1.0},
+            "dbuser_outlier_max_score_summary_hour": {"Min": 0.9, "Max": 1.0},
+            "dbuser_outlier_max_score_summary_day": {"Min": 0.8, "Max": 1.0},
+            "dbuser_count_violations_hour": {"Min": 0.9, "Max": 1.0},
+            "dbuser_count_violations_day": {"Min": 0.8, "Max": 1.0},
+            "dbuser_sensitive_obj_hour": {"Min": 0.9, "Max": 1.0},
+            "dbuser_sensitive_obj_day": {"Min": 0.8, "Max": 1.0},
+            "dbuser_login_failed_exceptions_hour": {"Min": 0.9, "Max": 1.0},
+            "dbuser_login_failed_exceptions_day": {"Min": 0.8, "Max": 1.0}
+          }
+        },
+        "dbuser_high_outlier_large_activities_high": {
+          "AnyOf": {
+            "dbuser_total_count_activity_hour": {"Min": 0.8, "Max": 0.9},
+            "dbuser_total_count_activity_day": {"Min": 0.6, "Max": 0.8},
+            "dbuser_outlier_max_score_summary_hour": {"Min": 0.8, "Max": 0.9},
+            "dbuser_outlier_max_score_summary_day": {"Min": 0.6, "Max": 0.8},
+            "dbuser_count_violations_hour": {"Min": 0.8, "Max": 0.9},
+            "dbuser_count_violations_day": {"Min": 0.6, "Max": 0.8},
+            "dbuser_sensitive_obj_hour": {"Min": 0.2, "Max": 1.0},
+            "dbuser_sensitive_obj_day": {"Min": 0.2, "Max": 1.0},
+            "dbuser_login_failed_exceptions_hour": {"Min": 0.2, "Max": 1.0},
+            "dbuser_login_failed_exceptions_day": {"Min": 0.2, "Max": 1.0}
+          }
+        },
+        "dbuser_high_outlier_large_activities_medium": {
+          "AnyOf": {
+            "dbuser_total_count_activity_hour": {"Min": 0.6, "Max": 0.8},
+            "dbuser_total_count_activity_day": {"Min": 0.3, "Max": 0.6},
+            "dbuser_outlier_max_score_summary_hour": {"Min": 0.6, "Max": 0.8},
+            "dbuser_outlier_max_score_summary_day": {"Min": 0.3, "Max": 0.6},
+            "dbuser_count_violations_hour": {"Min": 0.6, "Max": 0.8},
+            "dbuser_count_violations_day": {"Min": 0.3, "Max": 0.6},
+            "dbuser_sensitive_obj_hour": {"Min": 0.2, "Max": 1.0},
+            "dbuser_sensitive_obj_day": {"Min": 0.2, "Max": 1.0},
+            "dbuser_login_failed_exceptions_hour": {"Min": 0.2, "Max": 1.0},
+            "dbuser_login_failed_exceptions_day": {"Min": 0.2, "Max": 1.0}
+          }
+        },
+        "dbuser_high_outlier_large_activities_low": {
+          "AnyOf": {
+            "dbuser_total_count_activity_hour": {"Min": 0.3, "Max": 0.6},
+            "dbuser_total_count_activity_day": {"Min": 0.0, "Max": 0.3},
+            "dbuser_outlier_max_score_summary_hour": {"Min": 0.3, "Max": 0.6},
+            "dbuser_outlier_max_score_summary_day": {"Min": 0.0, "Max": 0.3},
+            "dbuser_count_violations_hour": {"Min": 0.3, "Max": 0.6},
+            "dbuser_count_violations_day": {"Min": 0.0, "Max": 0.3},
+            "dbuser_sensitive_obj_hour": {"Min": 0.2, "Max": 1.0},
+            "dbuser_sensitive_obj_day": {"Min": 0.2, "Max": 1.0},
+            "dbuser_login_failed_exceptions_hour": {"Min": 0.2, "Max": 1.0},
+            "dbuser_login_failed_exceptions_day": {"Min": 0.2, "Max": 1.0}
+          }
+        },
+
+  "dbuser_high_login_medium": {
+    "AnyOf": {
+      "dbuser_is_new_connection_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+      "dbuser_is_new_source_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+      "dbuser_login_failed_exception_hour": {"Min": 0.6, "Max": 1},
+      "dbuser_login_failed_exception_day": {"Min": 0.3, "Max": 1},
+      "dbuser_suc_sql_hour": {"Min": 0.6, "Max": 1},
+      "dbuser_count_activity_hour": {"Min": 0.6, "Max": 1},
+      "dbuser_is_admin_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+      "dbuser_sensitive_obj_hour": {"Min": 0.6, "Max": 1},
+      "dbuser_sensitive_obj_day": {"Min": 0.3, "Max": 1}
+    }
+  },
+  "dbuser_high_login_low": {
+    "AnyOf": {
+      "dbuser_is_new_connection_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+      "dbuser_is_new_source_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+      "dbuser_login_failed_exception_hour": {"Min": 0.3, "Max": 0.6},
+      "dbuser_login_failed_exception_day": {"Min": 0, "Max": 0.3},
+      "dbuser_suc_sql_hour": {"Min": 0.3, "Max": 0.6},
+      "dbuser_count_activity_hour": {"Min": 0.3, "Max": 0.6},
+      "dbuser_is_admin_hour": {"Min": 1, "Max": 1, "IsBoolean": true},
+      "dbuser_sensitive_obj_hour": {"Min": 0.3, "Max": 0.6},
+      "dbuser_sensitive_obj_day": {"Min": 0, "Max": 0.3}
+    }
+  }
+}

@@ -1,0 +1,41 @@
+[
+    {
+        "is_high_volume_select_hour": 1,
+        "is_high_volume_select_day": 1,
+        "outlier_max_score_summary_hour": 0.95,
+        "is_admin_hour": 1,
+        "sensitive_obj_hour": 0.92,
+        "sensitive_obj_day": 0.85
+    },
+    {
+        "is_high_volume_select_hour": 1,
+        "is_high_volume_select_day": 1,
+        "outlier_max_score_summary_hour": 0.85,
+        "is_admin_hour": 1,
+        "sensitive_obj_hour": 0.85,
+        "sensitive_obj_day": 0.7
+    },
+    {
+        "is_high_volume_select_hour": 1,
+        "is_high_volume_select_day": 1,
+        "outlier_max_score_summary_hour": 0.7,
+        "is_admin_hour": 1,
+        "sensitive_obj_hour": 0.7,
+        "sensitive_obj_day": 0.4
+    },
+    {
+        "is_high_volume_select_hour": 0,
+        "is_high_volume_select_day": 1,
+        "outlier_max_score_summary_hour": 0.4,
+        "is_admin_hour": 1,
+        "sensitive_obj_hour": 0.4,
+        "sensitive_obj_day": 0.2
+    }
+
+
+    
+    
+    
+    
+    
+]
